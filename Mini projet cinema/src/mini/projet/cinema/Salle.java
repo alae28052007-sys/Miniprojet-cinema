@@ -12,6 +12,7 @@ public class Salle {
     private int numeroSalle;
     private int nombreSiege;
     private ArrayList<Seance> listSeance;
+    
 
     public Salle(int numeroSalle, int nombreSiege) {
         this.numeroSalle = numeroSalle;

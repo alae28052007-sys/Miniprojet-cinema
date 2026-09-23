@@ -10,13 +10,32 @@ import java.util.ArrayList;
  */
 public class Cinema {
     private String ville;
-    private ArrayList<Seance> listsceance;
+    private ArrayList<Salle> listSalle;
     
     public Cinema(String ville){
-        
-        this.ville=ville;
-        this.listsceance=new ArrayList<>();
+        this.ville = ville;
+        this.listSalle = new ArrayList<>();
     }
     
- 
+    public void ajouterSalle(Salle s){
+        this.listSalle.add(s);
+    }
+    
+    public ArrayList<Salle> getListSalles() {
+        return listSalle;
+    }
+    
+    public String afficherseance() {
+        String resultat = "";
+        for (Salle salle : listSalle) {
+            resultat += salle.afficherseance() + " ";
+        }
+        return resultat;
+    }
+
+    public String getVille() {
+        return ville;
+    }
 }
+
+
