@@ -8,6 +8,41 @@ package mini.projet.cinema;
  *
  * @author alae2
  */
-public class film {
+public class Film {
+    private String titre;
+    private String realisateur;
+    private int duree;
+    
+    
+    public Film(String titre,String realisateur,int duree){
+        this.duree=0;
+        this.realisateur=realisateur;
+        this.titre=titre;
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getRealisateur() {
+        return realisateur;
+    }
+
+    public int getDuree() {
+        return duree;
+    }
+
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+
+    public void setRealisateur(String realisateur) {
+        this.realisateur = realisateur;
+    }
+
+    public void setDuree(int duree) {
+        this.duree = duree;
+    }
+    
     
 }
