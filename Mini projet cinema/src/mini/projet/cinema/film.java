@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package mini.projet.cinema;
-
+import java.util.ArrayList;
 /**
  *
  * @author alae2
@@ -15,9 +15,9 @@ public class Film {
     
     
     public Film(String titre,String realisateur,int duree){
-        this.duree=0;
-        this.realisateur=realisateur;
         this.titre=titre;
+        this.realisateur=realisateur;
+        this.duree= duree;
     }
 
     public String getTitre() {

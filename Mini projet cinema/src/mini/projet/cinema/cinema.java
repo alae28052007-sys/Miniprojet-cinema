@@ -9,14 +9,10 @@ import java.util.ArrayList;
  * @author alae2
  */
 public class Cinema {
-   
     private String ville;
-    
     private ArrayList<Seance> listsceance;
     
-    
     public Cinema(String ville){
-        
         
         this.ville=ville;
         this.listsceance=new ArrayList<>();
